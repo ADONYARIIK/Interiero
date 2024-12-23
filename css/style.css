@@ -27,12 +27,6 @@ body {
     padding: 0;
 }
 
-.trash {
-    display: none;
-    height: 0;
-    width: 0;
-}
-
 /*HEADER LOGO*/
 
 img.logo {
