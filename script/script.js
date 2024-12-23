@@ -113,10 +113,13 @@ document.getElementById('overlay').addEventListener('click', function () {
         element.classList.add('action')
     });
 
-    const animmm = document.querySelectorAll('.ico2');
+    const animmm = document.querySelectorAll('.search-field');
+    const search = document.querySelectorAll('.ico2');
 
     animmm.forEach(element => {
         element.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-1s')
+    });
+    search.forEach(element => {
         element.classList.add('action')
     });
 
