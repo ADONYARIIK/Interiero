@@ -34,13 +34,6 @@ document.querySelector('.closebtn').addEventListener('click', closeSearch);
 
 
 
-function myFunction(element) {
-    document.getElementById('container').classList.toggle("change");
-    document.getElementById('Mydropdown').classList.toggle("show");
-}
-
-
-
 var modal = document.getElementById("modal");
 
 
@@ -64,6 +57,13 @@ var imgo = document.getElementById("Imgo");
 var imgp = document.getElementById("Imgp");
 var imgq = document.getElementById("Imgq");
 var imgr = document.getElementById("Imgr");
+
+var imgs = document.getElementById("Imgs");
+var imgt = document.getElementById("Imgt");
+var imgu = document.getElementById("Imgu");
+var imgv = document.getElementById("Imgv");
+var imgw = document.getElementById("Imgw");
+var imgx = document.getElementById("Imgx");
 
 
 var modalImg = document.getElementById("img");
@@ -166,8 +166,154 @@ imgr.onclick = function () {
 }
 
 
+imgs.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+imgt.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+imgu.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+imgv.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+imgw.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+imgx.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
 var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function () {
     modal.style.display = "none";
+}
+
+
+var loadFile = function (event) {
+
+    var input = event.target;
+    var file = input.files[0];
+    var type = file.type;
+
+    var output = document.getElementById('preview_img');
+
+
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function () {
+        URL.revokeObjectURL(output.src)
+    }
+};
+
+
+
+
+// function change(button) {
+
+//     const textarea = document.getElementById('description');
+
+//     textarea.addEventListener('invalid', function () {
+//         if (textarea.value.trim() === '') {
+//             textarea.setCustomValidity('Please fill this field!');
+//             return;
+//         } else {
+//             textarea.setCustomValidity('');
+//         }
+//     });
+
+//     textarea.addEventListener('input', function () {
+//         textarea.setCustomValidity('');
+//     });
+
+
+//     const origin = button.innerHTML;
+
+//     button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+
+//     setTimeout(() => {
+//         button.innerHTML = origin;
+
+//         clear();
+
+//         showSnackbar();
+//     }, 2000);
+
+//     function clear() {
+//         var text = document.getElementById("description");
+//         var img = document.getElementById("image");
+//         var pimg = document.getElementById("preview_img");
+
+//         text.value = "";
+//         img.value = "";
+//         pimg.src = "../img/upload-files.svg";
+//     }
+
+//     function showSnackbar() {
+
+//         var x = document.getElementById("snackbar");
+
+//         x.className = "show";
+
+//         setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+//     };
+// }
+
+
+
+
+function change(button, event) {
+
+    event.preventDefault();
+
+
+    const textarea = document.getElementById('description');
+
+    if (textarea.value.trim() === "") {
+        textarea.setCustomValidity('Please fill this field!');
+        textarea.reportValidity();
+        return;
+    } else {
+        textarea.setCustomValidity('');
+    }
+
+    const origin = button.innerHTML;
+
+    button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+
+    setTimeout(() => {
+        button.innerHTML = origin;
+
+        clear();
+
+        showSnackbar();
+    }, 2000);
+
+    function clear() {
+        textarea.value = "";
+        img.value = "";
+        var pimg = document.getElementById("preview_img");
+        pimg.src = "../img/upload-files.svg";
+    }
+
+    function showSnackbar() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function () {
+            x.className = x.className.replace("show", "");
+        }, 3000);
+    }
 }
