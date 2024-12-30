@@ -150,9 +150,11 @@ let options = {
 
 function SignUp(button) {
     const form = document.getElementById("sign-up");
+    const anim = document.querySelectorAll('.anim');
 
     button.addEventListener("click", () => {
         form.style.display = 'block';
+        anim.classlist.remove(active);
 
         let callback = function (entries, observer) {
             entries.forEach(entry => {
