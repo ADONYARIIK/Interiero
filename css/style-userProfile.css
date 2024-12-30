@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 98vw;
+    height: 98vh;
+}
+h1{
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 100px;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="icon" type="image/jpg" href="../img/logo-head.jpg">
+    <link rel="stylesheet" href="../css/style-user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Interiero</title>
+</head>
+
+<body>
+    <div class="head"></div>
+    <div class="to-top">
+        <button class="scroll-button target">
+            <a href="#top" class="to-top-button" id="to-top">
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-dis.svg" alt="To top">
+                </div>
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-act.svg" alt="To top">
+                </div>
+            </a>
+        </button>
+    </div>
+
+    <div class="header" id="header" id="top">
+        <img src="../img/logo-up.png" alt="Logo" class="logo-header">
+
+        <a href="index.html" target="_blank" class="ret-mainp">
+            <div class="mainpage">
+                <h1>
+                    <div class="animate__animated animate__bounceInDown animate__delay-1s">Interiero</div>
+                </h1>
+                <h3 class="undertext-header">
+                    <div class="animate__animated animate__bounceInUp animate__delay-1s">Furniture Shop</div>
+                </h3>
+            </div>
+        </a>
+
+        <a href="shop.html" class="ret-shop">
+            <h2>
+                <div class="animate__animated animate__bounceInDown animate__delay-1s">Shop</div>
+            </h2>
+        </a>
+
+        <div class="dl">
+            <label class="switch" for="switch">
+                <input type="checkbox" id="switch" />
+                <div class="sunmoon">
+                    <div class="darkside"></div>
+                </div>
+                <div class="border"></div>
+                <div class="clouds">
+                    <img src="../img/cloud_1.svg" alt="" class="cloud cloud-1" />
+                    <img src="../img/cloud_2.svg" alt="" class="cloud cloud-2" />
+                    <img src="../img/cloud_3.svg" alt="" class="cloud cloud-3" />
+                    <img src="../img/cloud_4.svg" alt="" class="cloud cloud-4" />
+                    <img src="../img/stars.svg" alt="" class="stars" />
+                </div>
+            </label>
+        </div>
+
+        <div class="navbar-icons">
+            <!-- USER -->
+            <div class="user">
+                <a href="user.html" class="ico1 target" id="user" target="_blank">
+                    <div class="user-av">
+                        <div class="animate__animated animate__backInUp animate__fast">
+                            <i class="fa-regular fa-circle-user" class="nav"></i>
+                        </div>
+                    </div>
+                    <div class="user-av">
+                        <i class="fa-solid fa-circle-user" class="nav"></i>
+                    </div>
+                </a>
+            </div>
+            <!-- SEARCH -->
+            <div class="search-zone">
+                <div class="search">
+                    <a href="#" id="search">
+                        <fieldset class="search-field" id="open-search">
+                            <div class="animate__animated animate__bounceInRight animate__delay-1s">
+                                <i class="fa-solid fa-magnifying-glass" class="ico2" class="nav"></i>
+                            </div>
+                        </fieldset>
+                    </a>
+                </div>
+                <div class="hidden" id="search-container">
+                    <div id="s-overlay" class="searcho">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                        <div class="s-o-c">
+                            <input type="text" onfocus="this.value=''" class="search" id="search-t" name="search"
+                                value="I want find..."><button type="submit" class="sb" id="sb">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- HEART -->
+            <div class="heart">
+                <a href="favorites.html" class="ico3 target" target="_blank">
+                    <div class="heart-av">
+                        <i class="fa-regular fa-heart" class="nav"></i>
+                    </div>
+                    <div class="heart-av">
+                        <div class="animate__animated animate__heartBeat animate__infinite">
+                            <i class="fa-solid fa-heart" style="color: #ff0000;" class="nav"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- CART -->
+            <div class="cart">
+                <a href="cart.html" class="ico4 target" id="cart" target="_blank">
+                    <i class="fa-solid fa-cart-shopping" class="nav"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="choose-buttons">
+            <fieldset class="field-what" id="field-what">
+                <legend class="what" id="what">What you want to do?</legend>
+                <div class="buttons">
+                    <a href="#bott"><button type="button" class="login button" id="login" onclick="LogIn(this)">Log
+                            In</button></a>
+                    <a href="#bott"><button type="button" class="signup button" id="signup" onclick="SignUp(this)">Sign
+                            Up</button></a>
+                </div>
+            </fieldset>
+            <div id="bott"></div>
+        </div>
+
+        <div class="forms">
+            <fieldset class="sign-up formSign anim" id="sign-up">
+                <legend class="SignUp anim" id="SignUp">Sign Up</legend>
+
+                <form id="SignUpForm" class="SignUpForm" autocomplete="off">
+                    <input type="text" name="name" id="name" class="name anim" placeholder="Name..."
+                        pattern="^[A-Z][a-z]{1,}$" required onfocus="handleFocus(this)" onblur="adjustWidth(this)"><br>
+                    <div id="name-error" class="error-message">Please give a name!</div>
+
+                    <input type="text" name="surname" id="surname" class="surname anim" placeholder="Surname..."
+                        pattern="^[A-Z][a-z]{1,}$" required onfocus="handleFocus(this)" onblur="adjustWidth(this)"><br>
+                    <div id="surname-error" class="error-message">Please give a surname!</div>
+
+                    <input type="password" name="pass" id="pass" class="pass anim" placeholder="Password..."
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required onfocus="handleFocus(this)"
+                        onblur="adjustWidth(this)" onkeyup="validatePassword(this)"><br>
+                    <div id="pass-error" class="error-message">Please give a password!</div>
+                    <div id="message">
+                        <h3 id="h3">Password must contain the following:</h3>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    </div>
+
+                    <input type="password" name="rep-pass" id="rep-pass" class="rep-pass anim"
+                        placeholder="Repeat Password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                        onfocus="handleFocus(this)" onkeyup="validatePasswords(this)" onblur="adjustWidth(this)"><br>
+                    <div id="rep-pass-error" class="error-message">Please repeat a password!</div>
+                    <div id="rep-pass-cor-error" class="rep-pass-error-message">Please give a correct repeat of
+                        password!</div>
+
+                    <input type="email" name="email" id="email" class="email anim" placeholder="Email..." required
+                        onfocus="handleFocus(this)" onblur="adjustWidth(this)"><br>
+                    <div id="email-error" class="error-message">Please give a Email!</div>
+
+                    <input type="tel" name="phone" id="phone" class="phone anim" placeholder="Phone Number..." required
+                        onfocus="handleFocus(this)" onblur="adjustWidth(this)"
+                        pattern="^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$"><br>
+                    <div id="phone-error" class="error-message">Please give a phone number!</div>
+
+                    <div class="autocomplete">
+                        <input type="text" name="country" id="country" class="country anim" placeholder="Country..."
+                            pattern="^[A-Z][a-z]{1,}$" required onfocus="handleFocus(this)"
+                            onblur="adjustWidth(this)"><br>
+                        <div id="country-error" class="country-error-message">Please give a country!</div>
+                    </div>
+
+                    <fieldset id="sign-img" class="sign-img anim">
+                        <legend id="leg-img" class="leg-sign-img anim">Give a profile picture:</legend><br>
+                        <fieldset id="Image" class="simg anim">
+                            <label for="image" class="l-img anim">
+                                <img id='preview_img' class="preview_img anim" src="../img/upload-files.svg"
+                                    alt="upload files">
+                            </label>
+                            <input type="file" name="Image" id="image" class="image" accept="image/*"
+                                onchange="loadFile(event)">
+                        </fieldset>
+                    </fieldset>
+
+                    <div class="tp-zone" id="tp-zone">
+                        <input type="checkbox" class="tp anim" id="tp" required>
+                        <h3 class="tp-text anim" id="tp-text">By creating an account you agree to our<span class="tp-ag"
+                                id="tp-ag" onclick="TermPrivacy()"> Terms & Privacy.</span></h3>
+                    </div>
+                    <div id="check-error" class="error-message">Please agree to our Terms & Privacy!</div>
+
+                    <button type="submit" id="sign-sub" class="sign-sub anim" onclick="change(this, event)">Sign Up</button>
+                    <div id="general-error" class="general-error-message">You don't fill everything!
+                    </div>
+
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+
+
+    <script src="../script/script-user.js"></script>
+</body>
+
+</html>

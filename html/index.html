@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../img/logo-head.jpg">
+    <title>Interiero</title>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="text">Attention <br> Use the menu at the top of the page to navigate through it
+            <br><br><br><br><br><br><br><br>Tip: <br> (Click anywhere to get started)
+        </div>
+    </div>
+
+    <div class="to-top">
+        <button class="scroll-button target">
+            <a href="#top" class="to-top-button">
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-dis.svg" alt="To top">
+                </div>
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-act.svg" alt="To top">
+                </div>
+            </a>
+        </button>
+    </div>
+
+    <header class="header" id="top">
+
+        <div class="navbar target" id="navbar">
+            <img id="logo" class="logo target" src="../img/logo-up.png" alt="Logo">
+
+            <div class="UpText">
+                <a class="l" href="#top">
+                    <h1>Interiero</h1>
+                </a>
+            </div>
+
+            <div class="navbarl">
+                <a class="l" href="#section-home">Home</a>
+                <a class="l" href="#section-about">About</a>
+                <a class="l" href="#section-contact">Contact</a>
+                <a class="l" href="shop.html">Shop</a>
+            </div>
+
+            <div class="navbar-icons">
+                <!-- USER -->
+                <div class="user">
+                    <a href="user.html" class="ico1 target" id="user" target="_blank">
+                        <div class="user-av">
+                            <div class="animate__animated animate__backInUp animate__fast">
+                                <i class="fa-regular fa-circle-user" class="nav"></i>
+                            </div>
+                        </div>
+                        <div class="user-av">
+                            <i class="fa-solid fa-circle-user" class="nav"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- SEARCH -->
+                <div class="search-zone">
+                    <div class="search">
+                        <a href="#" id="search">
+                            <fieldset class="search-field" id="open-search">
+                                <div class="animate__animated animate__bounceInRight animate__delay-1s">
+                                    <i class="fa-solid fa-magnifying-glass" class="ico2" class="nav"></i>
+                                </div>
+                            </fieldset>
+                        </a>
+                    </div>
+                    <div class="hidden" id="search-container">
+                        <div id="s-overlay" class="searcho">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                            <div class="s-o-c">
+                                <input type="text" onfocus="this.value=''" class="search" id="search-t" name="search"
+                                    value="I want find..."><button type="submit" class="sb" id="sb">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HEART -->
+                <div class="heart">
+                    <a href="favorites.html" class="ico3 target" target="_blank">
+                        <div class="heart-av">
+                            <i class="fa-regular fa-heart" class="nav"></i>
+                        </div>
+                        <div class="heart-av">
+                            <div class="animate__animated animate__heartBeat animate__infinite">
+                                <i class="fa-solid fa-heart" style="color: #ff0000;" class="nav"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- CART -->
+                <div class="cart">
+                    <a href="cart.html" class="ico4 target" id="cart" target="_blank">
+                        <i class="fa-solid fa-cart-shopping" class="nav"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="main">
+        <div class="section-content">
+            <a href="logo.html" target="_blank"><img class="img target" src="../img/logo.jpg" alt="Logo"></a>
+            <fieldset class="field-content target">
+                <div class="content-text target">
+                    <h3>Novelty</h3>
+                    <h1>Discover our new collection</h1>
+                    <p>Discover our new furniture collection, which combines modern design with
+                        unparalleled quality.
+                        Inspired by the latest trends in the world of interiors, we have created unique products that
+                        will
+                        fit perfectly into any home.</p>
+                </div>
+                <div class="ab1">
+                    <a href="shop.html#colection4" target="_blank" class="b1"><button type="button"
+                            class="b1 target">BUY
+                            NOW</button></a>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="home">
+            <div class="section-home" id="section-home">
+                <div class="slider anim">
+                    <div class="slides anim">
+                        <div class="slider-holder">
+                            <div id="slide1"><img class="slide" src="../img/slide1.jpg" alt="Image 1"></div>
+                            <div id="slide2"><img class="slide" src="../img/slide2.jpg" alt="Image 2"></div>
+                            <div id="slide3"><img class="slide" src="../img/slide3.jpg" alt="Image 3"></div>
+                        </div>
+                    </div>
+                    <div class="button-holder">
+                        <a href="#slide1" class="button"></a>
+                        <a href="#slide2" class="button"></a>
+                        <a href="#slide3" class="button"></a>
+                    </div>
+                </div>
+                <fieldset class="field-home anim">
+                    <div class="home-text anim">
+                        <h1>Briefly about us</h1>
+                        <p>Interiero is a company specializing in the production and sale of furniture, with an emphasis
+                            on
+                            stylish and modern sofas. Their slogan "Furniture starts with the sofa" emphasizes the
+                            importance of the sofa in the interior. The company offers new furniture collections that
+                            can be
+                            purchased through their online store.</p>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="section-about" id="section-about">
+                <div class="about-text">
+                    <fieldset class="field-about-history anim">
+                        <div class="about-history-text anim">
+                            <h1>Company history</h1>
+                            <p>Interiero was founded in 2010 by two interior design enthusiasts, Anna and Michał
+                                Kowalski.
+                                Their
+                                passion for creating stylish and functional furniture led to the creation of a company
+                                that
+                                quickly gained popularity thanks to its innovative solutions and high-quality products.
+                                From
+                                the
+                                very beginning, Interiero has strived to offer its customers unique and modern furniture
+                                solutions that combine aesthetics and practicality. Today, the company continues to grow
+                                and
+                                develop, staying true to its core principles and values.</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field-about-construction anim">
+                        <div class="about-production-text anim">
+                            <h1>Production Process</h1>
+                            <p>The furniture production process at Interiero begins with the design stage, where a team
+                                of
+                                talented designers develops concepts and sketches of future products. Each piece of
+                                furniture is
+                                carefully thought out to meet high quality standards and meet the needs of customers.
+                                Once
+                                the
+                                design is approved, the production stage begins, which includes the use of modern
+                                technologies
+                                and high-quality materials. The entire process is controlled at every stage to ensure
+                                the
+                                impeccable quality of the final product. Interiero takes pride in its attention to
+                                detail
+                                and
+                                striving for excellence in every product.</p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="section-contact" id="section-contact">
+                <fieldset class="field-contact anim">
+                    <h1>
+                        <div class="h1 anim">Contact with us</div>
+                    </h1>
+                    <div class="contact-methods">
+                        <div class="method tel li"><img src="../img/contact/call.svg" alt="Phone number"
+                                class="contact tel anim">&nbsp<div class="text anim">+48 123-456-789</div>
+                        </div>
+                        <br>
+                        <div class="method mail li"><img src="../img/contact/gmail.svg" alt="E-mail"
+                                class="contact mail anim">&nbsp&nbsp<a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=scityrchenko@gmail.com"
+                                target="_blank" class="mail">
+                                <div class="text anim">scityrchenko@gmail.com</div>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="method X li"><img src="../img/contact/X.svg" alt="X"
+                                class="contact X anim">&nbsp&nbsp&nbsp
+                            <a href="https://x.com/" target="_blank" class="X">
+                                <div class="text anim">X</div>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="method viber li"><img src="../img/contact/viber.svg" alt="Viber"
+                                class="contact viber anim">&nbsp <div class="text anim">+48 123-456-789</div>
+                        </div>
+                        <br>
+                        <div class="method meta li net">
+                            <div class="dropdown">
+                                <button class="dropbtn"><img src="../img/contact/meta.svg" alt="Meta"
+                                        class="contact meta anim"></button>
+                                <div class="dropdown-content">
+                                    <a href="https://www.facebook.com/facebook/" target="_blank" class="drdwn"><img
+                                            src="../img/contact/facebook.svg" alt="Facebook"
+                                            class="contact net face anim" id="meta"></a>
+                                    <a href="https://www.instagram.com/" target="_blank" class="drdwn"><img
+                                            src="../img/contact/instagram.svg" alt="Instagram"
+                                            class="contact net inst anim" id="meta"></a>
+                                    <a href="https://www.messenger.com/" target="_blank" class="drdwn"><img
+                                            src="../img/contact/messenger.svg" alt="Messenger"
+                                            class="contact net mess anim" id="meta"></a>
+                                    <a href="https://web.whatsapp.com/" target="_blank" class="drdwn"><img
+                                            src="../img/contact/whatsapp.svg" alt="WhatsApp"
+                                            class="contact net what anim" id="meta"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

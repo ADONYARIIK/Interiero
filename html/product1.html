@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="icon" type="image/jpg" href="../img/logo-head.jpg">
+    <link rel="stylesheet" href="../css/style-products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Interiero</title>
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img">
+        <div id="caption"></div>
+    </div>
+
+    <div class="head"></div>
+    <div class="to-top">
+        <button class="scroll-button target">
+            <a href="#top" class="to-top-button" id="to-top">
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-dis.svg" alt="To top">
+                </div>
+                <div class="to-top-button-av">
+                    <img class="totop" src="../img/to-top-act.svg" alt="To top">
+                </div>
+            </a>
+        </button>
+    </div>
+
+    <div class="header" id="header" id="top">
+        <img src="../img/logo-up.png" alt="Logo" class="logo-header">
+
+        <a href="index.html" target="_blank" class="ret-mainp">
+            <div class="mainpage">
+                <h1>
+                    <div class="animate__animated animate__bounceInDown animate__delay-1s">Interiero</div>
+                </h1>
+                <h3 class="undertext-header">
+                    <div class="animate__animated animate__bounceInUp animate__delay-1s">Furniture Shop</div>
+                </h3>
+            </div>
+        </a>
+
+        <a href="shop.html" class="ret-shop">
+            <h2>
+                <div class="animate__animated animate__bounceInDown animate__delay-1s">Shop</div>
+            </h2>
+        </a>
+
+        <div class="dl">
+            <label class="switch" for="switch">
+                <input type="checkbox" id="switch" />
+                <div class="sunmoon">
+                    <div class="darkside"></div>
+                </div>
+                <div class="border"></div>
+                <div class="clouds">
+                    <img src="../img/cloud_1.svg" alt="" class="cloud cloud-1" />
+                    <img src="../img/cloud_2.svg" alt="" class="cloud cloud-2" />
+                    <img src="../img/cloud_3.svg" alt="" class="cloud cloud-3" />
+                    <img src="../img/cloud_4.svg" alt="" class="cloud cloud-4" />
+                    <img src="../img/stars.svg" alt="" class="stars" />
+                </div>
+            </label>
+        </div>
+
+        <div class="navbar-icons">
+            <!-- USER -->
+            <div class="user">
+                <a href="user.html" class="ico1 target" id="user" target="_blank">
+                    <div class="user-av">
+                        <div class="animate__animated animate__backInUp animate__fast">
+                            <i class="fa-regular fa-circle-user" class="nav"></i>
+                        </div>
+                    </div>
+                    <div class="user-av">
+                        <i class="fa-solid fa-circle-user" class="nav"></i>
+                    </div>
+                </a>
+            </div>
+            <!-- SEARCH -->
+            <div class="search-zone">
+                <div class="search">
+                    <a href="#" id="search">
+                        <fieldset class="search-field" id="open-search">
+                            <div class="animate__animated animate__bounceInRight animate__delay-1s">
+                                <i class="fa-solid fa-magnifying-glass" class="ico2" class="nav"></i>
+                            </div>
+                        </fieldset>
+                    </a>
+                </div>
+                <div class="hidden" id="search-container">
+                    <div id="s-overlay" class="searcho">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                        <div class="s-o-c">
+                            <input type="text" onfocus="this.value=''" class="search" id="search-t" name="search"
+                                value="I want find..."><button type="submit" class="sb" id="sb">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- HEART -->
+            <div class="heart">
+                <a href="favorites.html" class="ico3 target" target="_blank">
+                    <div class="heart-av">
+                        <i class="fa-regular fa-heart" class="nav"></i>
+                    </div>
+                    <div class="heart-av">
+                        <div class="animate__animated animate__heartBeat animate__infinite">
+                            <i class="fa-solid fa-heart" style="color: #ff0000;" class="nav"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- CART -->
+            <div class="cart">
+                <a href="cart.html" class="ico4 target" id="cart" target="_blank">
+                    <i class="fa-solid fa-cart-shopping" class="nav"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="product">
+            <fieldset class="productData" id="productData">
+                <legend class="Name" id="Name">Bordeaux Comfort Recliner</legend>
+
+
+                <div class="it">
+                    <div class="productImg" id="productImg">
+                        <fieldset class="fieldImg" id="fieldImg">
+                            <img id="Imga" src="../img/shop-poducts/Spring 2024/Armchair2.jpg"
+                                alt="Bordeaux Comfort Recliner" class="Img" id="Img">
+                        </fieldset>
+                    </div>
+
+                    <div class="productText" id="productText">
+                        <fieldset class="fieldText" id="fieldText">
+                            <p class="Text" id="Text">
+                                Introducing the star of our Spring 2024 Collection: This modern armchair exudes
+                                sophistication
+                                with its sleek, contemporary design and rich burgundy color. The chair features a
+                                smooth,
+                                curved
+                                backrest and armrests that seamlessly blend into its structure, offering a cohesive and
+                                elegant
+                                look. Its generously cushioned seat ensures maximum comfort, making it perfect for
+                                relaxing.
+                                <br><br>
+                                Supported by four slender, angled metal legs with a polished chrome finish, this
+                                armchair
+                                combines stability with a touch of modernity. The contrast between the plush upholstery
+                                and
+                                the
+                                sleek metal legs creates a striking visual impact, making this armchair a standout piece
+                                in
+                                any
+                                living space. Ideal for both modern and classic interiors, this armchair is a perfect
+                                blend
+                                of
+                                comfort and style, promising to elevate your home decor this spring.
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="addToCart" id="addToCart">
+                        <button type="button" class="add-cart anim" id="add-cart">
+                            <i class="fa-solid fa-cart-arrow-down" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+
+                    <div class="addToFavo anim" id="addToFavo">
+                        <div class="heart-av">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="heart-av">
+                            <div class="animate__animated animate__heartBeat">
+                                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Buy" id="Buy">
+                        <button type="button" class="buy anim" id="buy">
+                            BUY
+                        </button>
+                    </div>
+                </div>
+
+
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="rates">
+        <fieldset id="field-rates" class="field-rates anim">
+            <legend class="f-r-n  anim">Rates</legend>
+            <form>
+                <fieldset id="rat-img" class="rat-img anim">
+                    <legend class="f-r-i anim">Send an image of product:</legend><br>
+                    <fieldset id="Image" class="simg">
+                        <label for="image" class="inp-img">
+                            <img id='preview_img' class="preview_img anim" src="../img/upload-files.svg"
+                                alt="upload files">
+                        </label>
+                        <input type="file" required name="Image" id="image" class="own-img" accept="image/*"
+                            onchange="loadFile(event)">
+                    </fieldset>
+                    <div id="img-error" class="error-message">Please upload an image!</div>
+                </fieldset>
+
+                <fieldset id="rat-rat" class="rat-rat anim">
+                    <legend class="f-r-r anim">Choose a rating:</legend>
+                    <div class="rating anim">
+                        <input type="radio" name="rating" value="5" id="5" required><label class="lr" for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label class="lr" for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label class="lr" for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label class="lr" for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label class="lr" for="1">☆</label>
+                    </div>
+                    <div id="rating-error" class="error-message">Please select a rating!</div>
+                </fieldset>
+
+
+                <fieldset id="rat-text" class="rat-text anim">
+                    <legend for="description" class="f-r-t anim">Give an opinion:</legend><br><br>
+                    <textarea type="text" required name="Description" id="description"
+                        class="description anim"></textarea>
+                    <div id="text-error" class="error-message">Please fill in the description!</div>
+                </fieldset>
+
+
+                <br><br>
+                <button type="submit" id="send" class="send-rat anim" onclick="change(this, event)">Send</button>
+                <div id="general-error" class="error-message" style="display: none;">You don't fill everything!</div>
+            </form>
+        </fieldset>
+
+        <fieldset id="field-urates" class="field-urates anim">
+            <legend class="f-ur-n anim">Users rates</legend>
+            <fieldset class="nothing">
+                <p class="sorry anim">Sorry, it's empty right now</p>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div id="snackbar">Your opinion sended</div>
+
+
+
+    <script src="../script/script-products.js"></script>
+</body>
+
+</html>
